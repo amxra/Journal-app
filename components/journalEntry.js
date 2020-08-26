@@ -22,8 +22,8 @@ const styles = StyleSheet.create({
       flex: 1
     },
     journalEntryText:{
-        // borderWidth: 2,
-        // borderColor: "#20232a",
+        borderWidth: 2,
+        borderColor: "#20232a",
         minHeight: 620,
         maxHeight: 620,
         overflow: 'scroll',
