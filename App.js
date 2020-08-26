@@ -5,6 +5,7 @@ import { NativeRouter, Route, Link } from "react-router-native";
 import NewEntry from './components/NewEntry';
 import Entries from './components/Entries';
 import Profile from './components/Profile';
+import Entry from './components/Entry';
 import {v4 as uuid } from 'uuid';
 
 
@@ -30,6 +31,7 @@ function App(){
                 <Route path="/newentry" component={NewEntry} />
                 <Route  exact path="/" component={Entries} />
                 <Route path="/profile" component={Profile} />
+                <Route path = "/entry" component = {Entry}/>
             </View>
         </NativeRouter>
         
