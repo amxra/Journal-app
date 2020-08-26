@@ -17,7 +17,7 @@ function Footer(){
                             color = '#a8a8a8'
                         />
                     </Link>
-                    <Link to="/entries" underlayColor="#f0f4f7">
+                    <Link to="/" underlayColor="#f0f4f7">
                         <Icon
                             style = {styles.footerIcon}
                             name = 'list-alt'
