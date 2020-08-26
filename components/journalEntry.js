@@ -2,18 +2,18 @@ import React from 'react';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/dist/FontAwesome';
 import Header from './Header';
-import Footer from './Footer'
+import Footer from './Footer';
 
 function JournalEntry (){
     return(
-        <TouchableOpacity style = {styles.journalEntry}>
+        <View style = {styles.journalEntry}>
             <View style = {styles.journalEntryView}>
                 <Header/>
                 <Text style = {styles.journalEntryText}>
                 </Text>
                 <Footer/>
             </View>
-        </TouchableOpacity>
+        </View>
     )
 }
 

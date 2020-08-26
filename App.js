@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import JournalEntry from './components/journalEntry';
+import JournalEntry from './components/JournalEntry';
 import {v4 as uuid } from 'uuid';
 
 function App (){

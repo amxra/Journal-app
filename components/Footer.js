@@ -1,6 +1,9 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import Icon from 'react-native-vector-icons/dist/FontAwesome5'
+import { Link } from 'react-router-native';
+import EntryForm from './EntryForm';
+
 
 
 function Footer (){
@@ -8,22 +11,28 @@ function Footer (){
     <View style ={styles.footer}>
         {/* <Text style = {styles.footerText}>Footer</Text> */}
         <View style = {styles.footerIcons}>
-            <Icon
-                style = {styles.footerIcon}
-                name = 'pen-square'
-                size={40} 
-                color = '#a8a8a8'
-            />
+            <Link
+                to = '/newentry'
+                
+            >
+                <Icon
+                    style = {styles.footerIcon}
+                    name = 'pen-square'
+                    size={30} 
+                    color = '#a8a8a8'
+                />
+            </Link>
+            
             <Icon
                 style = {styles.footerIcon}
                 name = 'list-alt'
-                size={40} 
+                size={30} 
                 color = '#a8a8a8'
             />
             <Icon
                 style = {styles.footerIcon}
                 name = 'user'
-                size={40} 
+                size={30} 
                 color = '#a8a8a8'
             />
         </View>
@@ -53,7 +62,7 @@ const styles = StyleSheet.create({
   footerIcons : {
     // borderWidth: 2,
     // borderColor: 'red',
-    width: 400,
+    width: 300,
     display: 'flex',
     flexDirection: 'row',
     justifyContent: "space-around"
