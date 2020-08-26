@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, ScrollView, TextInput, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/dist/FontAwesome';
-import {v4 as uuid } from 'uuid';
 import Footer from './Footer';
 
 
@@ -9,20 +8,8 @@ import Footer from './Footer';
 
 function NewEntry() {
 
-    const [newEntry, setNewEntry] = useState({
-        id: uuid(), 
-        date: ' ',
-        emoji: ' ',
-        howDayWent: ' ',
-        whatCouldbeBetter: ' ',
-        whatWasntDone: ' ',
-        specialEvent: ' ',
-        couldHaveGoneBetter: ' ',
-        tomorrow: ' '
-    })
-
     return (
-        <View>
+        <View style={{flex: 1}}>
             <ScrollView>
                 <Text style = {styles.header}>New Entry</Text>
                 <View style = {styles.form}>
@@ -56,8 +43,8 @@ function NewEntry() {
                         </Text>
                     </TouchableOpacity>
                 </View>
-                <Footer/>
             </ScrollView>
+            <Footer style = {styles.footer}/>
         </View>
     )
 }
@@ -107,6 +94,9 @@ const styles = StyleSheet.create({
         color: '#a8a8a8',
         fontSize: 20,
         textAlign: 'center',
+    },
+    footer: {
+        position: "relative"
     }
 })
 
