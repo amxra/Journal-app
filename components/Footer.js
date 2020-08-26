@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import Icon from 'react-native-vector-icons/dist/FontAwesome5'
+import Icon from 'react-native-vector-icons/dist/FontAwesome5';
 
 function Footer(){
     return(
