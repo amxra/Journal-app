@@ -1,6 +1,10 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/dist/FontAwesome5';
+import { Link } from 'react-router-native';
+import NewEntry from './NewEntry';
+import Entries from './Entries';
+import Profile from './Profile';
 
 function Footer(){
     return(
