@@ -2,6 +2,7 @@ import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 
 
+
 function Header ({title}){
   return(
     <View style ={styles.header}>
@@ -23,7 +24,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: '#a8a8a8',
-    fontSize: 36,
+    fontSize: 46,
     textAlign: "center"
   }
 })
