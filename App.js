@@ -3,6 +3,7 @@ import { View, Text, StyleSheet } from 'react-native';
 import Footer from './components/Footer';
 import { NativeRouter, Route, Link } from "react-router-native";
 
+
 function App(){
     return(
         <View style = {styles.container}>
