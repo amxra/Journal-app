@@ -13,8 +13,7 @@ function App(){
         <NativeRouter>
             <View style = {styles.container}>
                 <View>
-                    <Text style = {styles.text}>Hello World</Text>
-                    <Footer/>
+                    <Entries/>
                 </View>
                 <Route exact path="/newentry" component={NewEntry} />
                 <Route path="/entries" component={Entries} />
