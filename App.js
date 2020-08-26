@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import JournalEntry from './components/journalEntry'
+import JournalEntry from './components/journalEntry';
+import {v4 as uuid } from 'uuid';
 
 function App (){
+
   return(
     <View style = {styles.container}>
         <JournalEntry/>
