@@ -6,28 +6,15 @@ import NewEntry from './components/NewEntry';
 import Entries from './components/Entries';
 import Profile from './components/Profile';
 import Entry from './components/Entry';
-import {v4 as uuid } from 'uuid';
 
 
 
 function App(){
-    const [newEntry, setNewEntry] = useState({
-        id: uuid(), 
-        date: ' ',
-        emoji: ['😊', '😐', ' 😮','🥴', '😭'],
-        howDayWent: ' ',
-        whatCouldbeBetter: ' ',
-        whatWasntDone: ' ',
-        specialEvent: ' ',
-        couldHaveGoneBetter: ' ',
-        tomorrow: ' '
-    })
+ 
+    
     return(
         <NativeRouter>
             <View style = {styles.container}>
-                <View>
-                    
-                </View>
                 <Route path="/newentry" component={NewEntry} />
                 <Route  exact path="/" component={Entries} />
                 <Route path="/profile" component={Profile} />
@@ -51,3 +38,86 @@ const styles = StyleSheet.create({
 })
 
 export default App;
+
+
+
+
+// const [newEntry, setNewEntry] = useState([
+//     {
+//         id: uuid(), 
+//         date: '25 Aug 2020',
+//         emoji: '😊',
+//         howDayWent: ' my day went okay ',
+//         whatCouldbeBetter: ' something',
+//         whatWasntDone: ' alot',
+//         specialEvent: ' none',
+//         couldHaveGoneBetter: 'meh ',
+//         tomorrow: ' i dont know '
+//     },
+//     {
+//         id: uuid(), 
+//         date: '25 Aug 2020',
+//         emoji: '😊',
+//         howDayWent: ' my day went okay ',
+//         whatCouldbeBetter: ' something',
+//         whatWasntDone: ' alot',
+//         specialEvent: ' none',
+//         couldHaveGoneBetter: 'meh ',
+//         tomorrow: ' i dont know '
+//     },
+//     {
+//         id: uuid(), 
+//         date: '25 Aug 2020',
+//         emoji: '😊',
+//         howDayWent: ' my day went okay ',
+//         whatCouldbeBetter: ' something',
+//         whatWasntDone: ' alot',
+//         specialEvent: ' none',
+//         couldHaveGoneBetter: 'meh ',
+//         tomorrow: ' i dont know '
+//     },
+//     {
+//         id: uuid(), 
+//         date: '25 Aug 2020',
+//         emoji: '😊',
+//         howDayWent: ' my day went okay ',
+//         whatCouldbeBetter: ' something',
+//         whatWasntDone: ' alot',
+//         specialEvent: ' none',
+//         couldHaveGoneBetter: 'meh ',
+//         tomorrow: ' i dont know '
+//     },
+//     {
+//         id: uuid(), 
+//         date: '25 Aug 2020',
+//         emoji: '😊',
+//         howDayWent: ' my day went okay ',
+//         whatCouldbeBetter: ' something',
+//         whatWasntDone: ' alot',
+//         specialEvent: ' none',
+//         couldHaveGoneBetter: 'meh ',
+//         tomorrow: ' i dont know '
+//     },
+//     {
+//         id: uuid(), 
+//         date: '25 Aug 2020',
+//         emoji: '😊',
+//         howDayWent: ' my day went okay ',
+//         whatCouldbeBetter: ' something',
+//         whatWasntDone: ' alot',
+//         specialEvent: ' none',
+//         couldHaveGoneBetter: 'meh ',
+//         tomorrow: ' i dont know '
+//     },
+//     {
+//         id: uuid(), 
+//         date: '25 Aug 2020',
+//         emoji: '😊',
+//         howDayWent: ' my day went okay ',
+//         whatCouldbeBetter: ' something',
+//         whatWasntDone: ' alot',
+//         specialEvent: ' none',
+//         couldHaveGoneBetter: 'meh ',
+//         tomorrow: ' i dont know '
+//     }
+// ])
