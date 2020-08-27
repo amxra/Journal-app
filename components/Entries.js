@@ -29,6 +29,7 @@ function Entries() {
                        <Entry style = {styles.entryStyle}
                         date = {entry.date}
                         emoji = {entry.emoji}
+                        id = {entry.id}
                        />
                    ))}
                 </View>
