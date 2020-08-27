@@ -56,7 +56,7 @@ export default App;
 //     },
 //     {
 //         id: uuid(), 
-//         date: '25 Aug 2020',
+//         date: '26 Aug 2020',
 //         emoji: '😊',
 //         howDayWent: ' my day went okay ',
 //         whatCouldbeBetter: ' something',
@@ -67,7 +67,7 @@ export default App;
 //     },
 //     {
 //         id: uuid(), 
-//         date: '25 Aug 2020',
+//         date: '27 Aug 2020',
 //         emoji: '😊',
 //         howDayWent: ' my day went okay ',
 //         whatCouldbeBetter: ' something',
@@ -78,7 +78,7 @@ export default App;
 //     },
 //     {
 //         id: uuid(), 
-//         date: '25 Aug 2020',
+//         date: '28 Aug 2020',
 //         emoji: '😊',
 //         howDayWent: ' my day went okay ',
 //         whatCouldbeBetter: ' something',
@@ -89,7 +89,7 @@ export default App;
 //     },
 //     {
 //         id: uuid(), 
-//         date: '25 Aug 2020',
+//         date: '29 Aug 2020',
 //         emoji: '😊',
 //         howDayWent: ' my day went okay ',
 //         whatCouldbeBetter: ' something',
@@ -100,7 +100,7 @@ export default App;
 //     },
 //     {
 //         id: uuid(), 
-//         date: '25 Aug 2020',
+//         date: '30 Aug 2020',
 //         emoji: '😊',
 //         howDayWent: ' my day went okay ',
 //         whatCouldbeBetter: ' something',
@@ -111,7 +111,7 @@ export default App;
 //     },
 //     {
 //         id: uuid(), 
-//         date: '25 Aug 2020',
+//         date: '31 Aug 2020',
 //         emoji: '😊',
 //         howDayWent: ' my day went okay ',
 //         whatCouldbeBetter: ' something',

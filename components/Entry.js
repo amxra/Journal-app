@@ -50,11 +50,53 @@ function Entry() {
 
 
 const styles = StyleSheet.create({
+    header:{
+        color: "#a8a8a8",
+        fontSize: 50,
+        textAlign: "center"
+    },
     text:{
       justifyContent: 'center', 
-      color: 'darkslateblue', 
-      fontSize: 50,
-      textAlign: "center",
+      fontSize: 15,
+      color: '#a8a8a8',
+      marginLeft: 20,
+    },
+    form: {
+        // borderWidth: 2,
+        // borderColor: 'red',
+        minHeight: 600,
+        alignItems: "center",
+        marginBottom: 100,
+    },
+    input:{
+        height: 120,
+        padding: 20,
+        fontSize: 16,
+        // borderWidth: 2,
+        // borderColor: 'blue',
+        borderRadius: 5,
+        margin: 20,
+        backgroundColor: "rgba(168,168,168,0.1)"
+    },
+    formSection: {
+        // borderWidth: 2,
+        // borderColor: 'black',
+        marginTop: 50,
+        width: 400,
+    },
+    btn: {
+        backgroundColor : 'rgba(168,168,168,0.3)',
+        padding: 9,
+        marginTop: 40,
+        width: 250
+    },
+    btnText : {
+        color: '#a8a8a8',
+        fontSize: 20,
+        textAlign: 'center',
+    },
+    footer: {
+        position: "relative"
     },
     footer: {
         position: "relative"

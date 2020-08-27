@@ -8,23 +8,88 @@ import Entry from "./Entry"
 
 
 function Entries() {
-    const id = uuid();
-    const date = "27 Aug 2020";
-    const emoji = "😊";
-    const howDayWent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
-    const whatCouldbeBetter = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
-    const whatWasntDone = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
-    const specialEvent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
-    const couldHaveGoneBetter = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
-    const tomorrow = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    return (
+
+    const entries = [{
+                id: uuid(), 
+                date: '25 Aug 2020',
+                emoji: '😊',
+                howDayWent: ' my day went okay ',
+                whatCouldbeBetter: ' something',
+                whatWasntDone: ' alot',
+                specialEvent: ' none',
+                couldHaveGoneBetter: 'meh ',
+                tomorrow: ' i dont know '
+            },
+            {
+                id: uuid(), 
+                date: '26 Aug 2020',
+                emoji: '😊',
+                howDayWent: ' my day went okay ',
+                whatCouldbeBetter: ' something',
+                whatWasntDone: ' alot',
+                specialEvent: ' none',
+                couldHaveGoneBetter: 'meh ',
+                tomorrow: ' i dont know '
+            },
+            {
+                id: uuid(), 
+                date: '27 Aug 2020',
+                emoji: '😊',
+                howDayWent: ' my day went okay ',
+                whatCouldbeBetter: ' something',
+                whatWasntDone: ' alot',
+                specialEvent: ' none',
+                couldHaveGoneBetter: 'meh ',
+                tomorrow: ' i dont know '
+            },
+            {
+                id: uuid(), 
+                date: '28 Aug 2020',
+                emoji: '😊',
+                howDayWent: ' my day went okay ',
+                whatCouldbeBetter: ' something',
+                whatWasntDone: ' alot',
+                specialEvent: ' none',
+                couldHaveGoneBetter: 'meh ',
+                tomorrow: ' i dont know '
+            },
+            {
+                id: uuid(), 
+                date: '29 Aug 2020',
+                emoji: '😊',
+                howDayWent: ' my day went okay ',
+                whatCouldbeBetter: ' something',
+                whatWasntDone: ' alot',
+                specialEvent: ' none',
+                couldHaveGoneBetter: 'meh ',
+                tomorrow: ' i dont know '
+            },
+            {
+                id: uuid(), 
+                date: '30 Aug 2020',
+                emoji: '😊',
+                howDayWent: ' my day went okay ',
+                whatCouldbeBetter: ' something',
+                whatWasntDone: ' alot',
+                specialEvent: ' none',
+                couldHaveGoneBetter: 'meh ',
+                tomorrow: ' i dont know '
+            },
+            {
+                id: uuid(), 
+                date: '31 Aug 2020',
+                emoji: '😊',
+                howDayWent: ' my day went okay ',
+                whatCouldbeBetter: ' something',
+                whatWasntDone: ' alot',
+                specialEvent: ' none',
+                couldHaveGoneBetter: 'meh ',
+                tomorrow: ' i dont know '
+            }]
+
+   return (
         <View >
-            <Entry
-            id = {id}
-            date = {date}
-            emoji = {emoji}
-            howDayWent = {howDayWent}
-            />
+            
             <Footer/>
         </View>
     )
@@ -43,21 +108,3 @@ const styles = StyleSheet.create({
 
 export default Entries;
 
-
-// function ListItem ({item, deleteItem}){
-//     return(
-//       <TouchableOpacity style = {styles.listItem}>
-//           <View style = {styles.listItemView}>
-//               <Text style = {styles.listItemText}>
-//                   {item.text}
-//               </Text>
-//               <Icon 
-//                   name = 'remove' 
-//                   size={20} 
-//                   color = 'firebrick'
-//                   onPress = {() => deleteItem(item.id)} 
-//               />
-//           </View>
-//       </TouchableOpacity>
-//     );
-// };
