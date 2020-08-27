@@ -10,12 +10,12 @@ import Entry from './Entry'
 function Entries() {
 
     const entries = [
-        {date: "27 Aug 2020", emoji: "😊"},
-        {date: "26 Aug 2020", emoji: "🥴"},
-        {date: "25 Aug 2020", emoji: "😐"},
-        {date: "24 Aug 2020", emoji: "😊"},
-        {date: "23 Aug 2020", emoji: "😊"},
-        {date: "22 Aug 2020", emoji: "😊"},
+        {id:uuid(), date: "27 Aug 2020", emoji: "😊"},
+        {id:uuid(), date: "26 Aug 2020", emoji: "🥴"},
+        {id:uuid(), date: "25 Aug 2020", emoji: "😐"},
+        {id:uuid(), date: "24 Aug 2020", emoji: "😊"},
+        {id:uuid(), date: "23 Aug 2020", emoji: "😊"},
+        {id:uuid(), date: "22 Aug 2020", emoji: "😊"},
     ]
 
    return (
