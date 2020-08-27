@@ -4,7 +4,6 @@ import { NativeRouter, Route, Link } from "react-router-native";
 import NewEntry from './components/NewEntry';
 import Entries from './components/Entries';
 import Profile from './components/Profile';
-import Entry from './components/Entry';
 
 
 function App(){
@@ -16,7 +15,6 @@ function App(){
                 <Route path="/newentry" component={NewEntry} />
                 <Route  exact path="/" component={Entries} />
                 <Route path="/profile" component={Profile} />
-                <Route path="/entry" component={Entry} />
             </View>
         </NativeRouter>
         
@@ -26,7 +24,7 @@ function App(){
 const styles = StyleSheet.create({
     container:{
       flex: 1, 
-      paddingTop: 130,
+      paddingTop: 120,
     },
     text:{
       color: 'darkslateblue', 

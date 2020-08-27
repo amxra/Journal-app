@@ -10,8 +10,12 @@ import Entry from './Entry'
 function Entries() {
 
     const entries = [
-        {name: "amira", age: "26"},
-        {name: "moyo", age: "26"}
+        {date: "27 Aug 2020", emoji: "😊"},
+        {date: "26 Aug 2020", emoji: "🥴"},
+        {date: "25 Aug 2020", emoji: "😐"},
+        {date: "24 Aug 2020", emoji: "😊"},
+        {date: "23 Aug 2020", emoji: "😊"},
+        {date: "22 Aug 2020", emoji: "😊"},
     ]
 
    return (
@@ -20,11 +24,11 @@ function Entries() {
                 <Text style = {styles.text}>
                     Entries
                 </Text>
-                <View>
+                <View style = {styles.entriesContainer}>
                    {entries.map(entry => (
-                       <Entry
-                        name = {entry.name}
-                        age = {entry.age}
+                       <Entry style = {styles.entryStyle}
+                        date = {entry.date}
+                        emoji = {entry.emoji}
                        />
                    ))}
                 </View>
@@ -43,6 +47,17 @@ const styles = StyleSheet.create({
       color: '#a8a8a8', 
       fontSize: 50,
       textAlign: "center",
+    },
+    entryStyle: {
+        borderWidth: 2,
+        borderColor: "black"
+    },
+    entriesContainer:{
+        // borderWidth: 3,
+        // borderColor: "red",
+        minHeight: 500,
+        paddingBottom: 20,
+        paddingTop: 60,
     },
     footer:{
         position: "relative"

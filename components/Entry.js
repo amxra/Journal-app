@@ -10,11 +10,11 @@ import {v4 as uuid } from 'uuid';
 function Entry(props) {
 
    return (
-        <View style = {{flex:1}}>
+        <View>
             <ScrollView>
-                <View>
-                    <Text>{props.name}</Text>
-                    <Text>{props.age}</Text>
+                <View style = {styles.entryContainer}>
+                    <Text style = {styles.entryDate}>{props.date}</Text>
+                    <Text style = {styles.entryEmoji}>{props.emoji}</Text>
                 </View>
             </ScrollView>
         </View>
@@ -29,6 +29,32 @@ const styles = StyleSheet.create({
       color: '#a8a8a8', 
       fontSize: 50,
       textAlign: "center",
+    },
+    entry: {
+        backgroundColor: "white",
+        borderColor: "black",
+        borderWidth: 2
+    },
+    entryContainer:{
+        height: 100,
+        marginBottom: 50,
+        marginLeft: 30,
+        marginRight: 30,
+        borderRadius: 10,
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-around",
+        backgroundColor: "#fff",
+        shadowColor:"#d0d0d0",
+        shadowOffset: {width:5, height: 5},
+        shadowRadius: 10,
+        shadowOpacity: 1,
+        width: 350,
+    },
+    entryDate:{
+        fontSize: 25,
+        color: '#a8a8a8', 
     },
     footer:{
         position: "relative"

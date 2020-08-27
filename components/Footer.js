@@ -33,9 +33,6 @@ function Footer(){
                             color = '#a8a8a8'
                         />
                     </Link>
-                    <Link to = "/entry" underlayColor="#f0f4f7">
-                        <Text>entry</Text>
-                    </Link>
                 </View>
             </View>
         </View>
